@@ -45,7 +45,6 @@ Output
 
 .
 ├── run.sh               # Builds and runs the Go program with input strings
-├── run_unittests.sh     # Executes Go unit tests
 ├── main.go              # Your implementation
 └── README.md            # Documentation
 
@@ -66,21 +65,6 @@ Example
 
 Each quoted value is passed as a single string argument to the Go program.
 
-⸻
-
-🧠 Input Handling Guidelines
-	•	Do not use interactive input (fmt.Scan, bufio.NewReader(os.Stdin), etc.)
-	•	All inputs are available via:
-
-os.Args
-
-	•	You are responsible for:
-	•	Parsing the input strings
-	•	Splitting tokens
-	•	Typecasting to required types (int, float64, etc.)
-
-⸻
-
 🛠️ Where to Implement
 
 Write your solution in:
@@ -98,24 +82,3 @@ The main function is the entry point where:
 	•	Print only the final result to stdout
 	•	Follow the output format defined in the problem statement
 	•	Avoid extra whitespace, logs, or debug prints
-
-⸻
-
-💡 Best Practices
-	•	Keep functions small and focused
-	•	Prefer clear naming and clean structure
-	•	Avoid global state unless necessary
-	•	Handle edge cases explicitly
-	•	Aim for optimal time and space complexity
-
-⸻
-
-🚀 Interview Goal
-
-This starter kit mirrors real-world Go coding interview constraints, focusing on:
-	•	String parsing
-	•	Core logic implementation
-	•	Clean, idiomatic Go code
-	•	Deterministic output
-
-Good luck and happy coding! 🎯
